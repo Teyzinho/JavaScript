@@ -1,0 +1,115 @@
+
+body{
+    background-image: url(Imagens/wallpaper.jpg);
+}
+
+input{
+    width: 0;
+    opacity: 0;
+    visibility: 0;
+}
+
+.contentEscolha{
+    display: flex;
+    justify-content: space-around;
+}
+
+.suaEscolha{
+    transform: rotate(90deg);
+}
+
+.suaEscolha img{
+    width:250px;
+}
+
+.animacao{
+    animation-name: suaEscolha;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+@keyframes suaEscolha {
+    0%{transform: rotate(75deg);}
+    100%{transform: rotate(90deg);}
+}
+
+.botEscolha{
+    
+    background-size: 250px;
+    transform: rotate(270deg);
+
+}
+
+.botBackground{
+    background-size: 250px;
+    background-image: url(Imagens/mao-aberta.png);
+
+    animation-name: jokenpo;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+}
+
+
+
+@keyframes jokenpo {
+    0%{background-image: url(Imagens/mao-aberta.png);}
+    50%{background-image: url(Imagens/mao.png);}
+    100%{background-image: url(Imagens/paz.png);}
+}
+
+.imagem{
+    width:250px;
+    visibility: hidden;
+}
+
+.aparecer{
+    visibility: visible;
+}
+
+
+
+.contentJogo{
+    display: flex;
+    justify-content: center;
+}
+
+.contentJogo img{
+    width:225px;
+    transition-duration: 0.2s;
+    padding: 50px;
+}
+
+.contentJogo :hover img{
+    width:240px;
+    cursor: pointer;
+}
+
+.texto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.resultado{
+    display: flex;
+    width:200px;
+    justify-content: center;
+    font-size: 48px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.colorWhite{
+    background-color: antiquewhite;
+}
+
+.colorRed{
+    background-color: red;
+}
+
+.colorGreen{
+    background-color: green;
+}

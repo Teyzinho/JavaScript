@@ -1,0 +1,20 @@
+body{
+    padding: 0;
+    margin: 0;
+
+    background-color: cornflowerblue;
+}
+
+.img{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.calcule{
+    display: grid;
+    grid-template-columns: 10% 10%;
+    align-items: center;
+    justify-content: center;
+    text-align: end;
+}

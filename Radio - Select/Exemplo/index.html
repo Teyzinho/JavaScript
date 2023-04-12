@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form name="cadastro">
+        <select name="num" id="num">
+            <option value="um">um</option>
+            <option value="dois">dois</option>
+            <option value="tres">tres</option>
+        </select>
+
+        <input type="radio" name="hora" id="hora1" value="30h"><label for="hora">30h</label>
+        <input type="radio" name="hora" id="hora2" value="40h"><label for="hora">40h</label>
+        <input type="radio" name="hora" id="hora3" value="60h"><label for="hora">60h</label>
+
+        <input type="button" onclick="start()" value="Enviar">
+    </form>
+</body>
+</html>

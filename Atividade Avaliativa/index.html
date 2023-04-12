@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade Avaliativa</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div id="degrade">
+    <h1>Atividade 1: Calculo de distância</h1>
+    <form name="atividade1">
+        <p>distância x1:</p>
+        <input type="text" name="x1" value="">
+        <p>distância x2:</p>
+        <input type="text" name="x2" value="">
+        <p>distância y1:</p>
+        <input type="text" name="y1" value="">
+        <p>distância y2:</p>
+        <input type="text" name="y2" value="">
+
+        <p>Resultado</p>
+        <input type="text" name="resultado" value="">
+        <input type="button" onclick="startAtividade1();" value="Enviar">
+    </form>
+
+    <h1>Atividade 2</h1>
+    <form name="atividade2">
+        <p>Insira Valor de A:</p>
+        <input type="text" name="a" value="">
+        <p>Insira Valor de B:</p>
+        <input type="text" name="b" value="">
+        <p>Insira Valor de C:</p>
+        <input type="text" name="c" value="">
+
+        <p>Resultado</p>
+        <input type="button" onclick="startAtividade2();" value="Enviar">
+        <input type="text" name="resultado" value="">
+    </form>
+
+    <h1>Atividade 3</h1>
+    <form name="atividade3">
+        <input type="date" name="data" value="">
+
+        <input type="button" onclick="startAtividade3();" value="Enviar">
+        <input type="text" name="resultado" value="">
+    </form>
+
+    <h1>Atividade 4</h1>
+    <form name="atividade4">
+        <p>Insira sua idade em dias</p>
+        <input type="text" name="dias" value="">
+        <input type="button" onclick="startAtividade4()" value="Enviar">
+        <p>Resultado em anos</p>
+        <input type="text" name="anos" value="">
+        <p>Resultado em meses</p>
+        <input type="text" name="meses" value="">
+
+    </form>
+
+    <h1>Atividade 5</h1>
+    <form name="atividade5">
+        <p>Insira sua 1º Nota</p>
+        <input type="text" name="nota1" value="">
+        <p>Insira sua 2º Nota</p>
+        <input type="text" name="nota2" value="">
+        <p>Insira sua 3º Nota</p>
+        <input type="text" name="nota3" value="">
+
+        <input type="button" onclick="startAtividade5()" value="Enviar">
+        <p>Média</p>
+        <input type="text" name="resultado" value="">
+    </form>
+
+    <h1>Atividade 6</h1>
+    <form name="atividade6">
+        <p>Insira o tempo em segundos</p>
+        <input type="text" name="segundos" value="">
+        <input type="button" value="Enviar" onclick="startAtividade6()">
+        <p>Tempo em horas:</p>
+        <input type="text" name="horas" value="">
+        <p>Tempo em minutos</p>
+        <input type="text" name="minutos" value="">
+    </form>
+
+    <h1>Atividade 7</h1>
+    <form name="atividade7">
+        <p>Insira sua 1º Nota</p>
+        <input type="text" name="nota1" value="">
+        <p>Insira sua 2º Nota</p>
+        <input type="text" name="nota2" value="">
+        <p>Insira sua 3º Nota</p>
+        <input type="text" name="nota3" value="">
+
+        <input type="button" value="Enviar" onclick="startAtividade7()">
+
+        <p>Média</p>
+        <input type="text" name="resultado" value="">
+        Estado Do Aluno:
+        <span id="estadoAluno">
+            
+        </span>
+    </form>
+
+    <h1>Atividade 8</h1>
+    <form name="atividade8">
+        <p>Insira 1° Número</p>
+        <input type="text" name="num1" value="">
+        <p>Insira 2° Número</p>
+        <input type="text" name="num2" value="">
+        <p>Insira 3° Número</p>
+        <input type="text" name="num3" value="">
+
+        <input type="button" value="Enviar" onclick="startAtividade8()">
+        <p>O maior Número é</p>
+        <input type="text" name="resultado" value="">
+    </form>
+
+    <h1>Atividade 9</h1>
+    <form name="atividade9">
+        <form name="atividade7">
+            <p>Insira sua 1º Nota</p>
+            <input type="text" name="nota1" value="">
+            <p>Insira sua 2º Nota</p>
+            <input type="text" name="nota2" value="">
+            <p>Insira sua 3º Nota</p>
+            <input type="text" name="nota3" value="">
+    
+            <input type="button" value="Enviar" onclick="startAtividade9()">
+    
+            <p>Média Ponderada</p>
+            <input type="text" name="resultado" value="">
+            Estado Do Aluno:
+            <span id="estadoAluno9">
+                
+            </span>
+        
+    </form>
+
+    <h1>Atividade 10</h1>
+    <form name="atividade10">
+        <p>Insira um número</p>
+        <input type="text" name="num" value="">
+
+        <input type="button" value="Enviar" onclick="startAtividade10()">  
+
+        <br>O número é
+
+        <span id="parOuImpar">
+
+        </span>
+
+        <span id="negativoOuPositivo">
+
+        </span>
+        
+    </form>
+
+    <h1>Atividade 11</h1>
+    <form name="atividade11">
+        <p>Insira o horario de inicio do jogo</p>
+        <input type="text" name="inicio" value="">
+        <p>Insira o horario de termino do jogo</p>
+        <input type="text" name="termino" value="">
+
+        <input type="button" value="Enviar" onclick="startAtividade11()">
+        <p>Resultado</p>
+        <input type="text" name="resultado">
+    </form>
+
+    <h1>Atividade 12</h1>
+    <form name="atividade12">
+        <p>Insira um número</p>
+        <input type="text" name="num" value="">
+
+        <p>Quantos de 100</p>
+        <input type="text" name="cem" value="">
+        <p>Quantos de cinquenta</p>
+        <input type="text" name="cinquenta" value="">
+        <p>Quantos de dez</p>
+        <input type="text" name="dez" value="">
+        <p>Quantas de cinco</p>
+        <input type="text" name="cinco" value="">
+        <p>Quantos de um</p>
+        <input type="text" name="um" value="">
+        <input type="button" value="Enviar" onclick="startAtividade12()">
+    </form>
+</div>
+</div>
+</body>
+</html>

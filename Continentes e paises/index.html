@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continentes e paises</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="gerar();">
+
+    <div class="content">
+        <h2>Selecione um continente</h2>
+        <div class="radioButtons" onchange="gerar();">
+            <input type="radio" name="continente" value="america" id="america" checked >
+            <label for="america">América</label>
+            <input type="radio" name="continente" value="africa" id="africa">
+            <label for="africa">África</label>
+            <input type="radio" name="continente" value="europa" id="europa">
+            <label for="europa">Europa</label>
+            <input type="radio" name="continente" value="asia" id="asia">
+            <label for="asia">Ásia</label>
+            <input type="radio" name="continente" value="oceania" id="oceania">
+            <label for="oceania">Oceania</label>
+            <input type="radio" name="continente" value="antartida" id="antartida">
+            <label for="antartida">Antártida</label>
+        </div>
+        
+        <h3>Países</h3>
+        <select name="paises" id="paises" class="selectPais">
+        </select>
+
+        <img src="" alt="" id="imagem" class="imagem">
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

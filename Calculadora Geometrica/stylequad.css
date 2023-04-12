@@ -1,0 +1,13 @@
+.quadrado{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.texto {
+    position: absolute;
+    align-items: flex-end;
+    left: 67%;
+    top: 250px;
+}

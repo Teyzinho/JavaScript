@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra, papel e Tesoura!</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/JavaScript" src="script.js"></script>
+</head>
+<body>
+    <h1 align="center">Jokenpo</h1>
+    <div class="contentEscolha">
+        <div class="suaEscolha animacao" id="suaEscolha">
+            <img src="Imagens/mao.png" id="img">
+        </div>
+        <div class="botEscolha botBackground" id="botEscolha">
+            <img src="Imagens/paz.png" id="imgBot" class="imagem">
+        </div>
+    </div>
+
+    
+    <div class="texto">
+        <span id="resultado" class="resultado" value="Teste">
+            Resultado
+        </span>
+    </div>
+
+    <div class="contentJogo">
+        <input type="radio" name="escolha" id="pedra" onclick="start();">
+        <input type="radio" name="escolha" id="papel" onclick="start();">
+        <input type="radio" name="escolha" id="tesoura" onclick="start();">
+
+        <label for="pedra">
+            <img src="Imagens/mao.png">  
+        </label> 
+
+        <label for="papel">
+            <img src="Imagens/mao-aberta.png">
+        </label>
+
+        <label for="tesoura">
+            <img src="Imagens/paz.png">
+        </label>
+
+         
+    </div>
+    
+</body>
+</html>

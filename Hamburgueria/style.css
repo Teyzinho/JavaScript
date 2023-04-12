@@ -1,0 +1,89 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#cabecalho{
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 90px;
+}
+
+.imagem{
+    position: absolute;
+    z-index: -1;
+}
+
+.imagem img{
+    width: 500px;
+}
+
+.imagem2{
+    position: absolute;
+    z-index: -1;
+    left:1000px;
+    top:350px;
+}
+
+.imagem2 img{
+    width: 450px;
+    
+}
+
+.menu{
+    display: grid;
+    grid-template-columns: 25% 10% 10%;
+    align-items: center;
+    justify-content: center;
+    gap: 5px 0px;
+
+}
+
+.menu h2{
+    margin:0;
+    padding: 0;
+    border: 1px solid black;
+    border-right: none;
+    background-color: chocolate;
+}
+
+.menu h3{
+    font-size: 24px;
+    margin:0;
+    padding: 0;
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    background-color: chocolate;
+}
+
+.Input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 27px;
+    border: 1px solid black;
+    border-left: none;
+    background-color: chocolate;
+}
+
+.Input input{
+    width: 75px;
+}
+
+.containerValor{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.containerValor div{
+    display: flex;
+    align-items: center;
+}
+
+.containerValor div input{
+    height: 25px;
+    width:100px;
+}

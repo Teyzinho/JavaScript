@@ -1,0 +1,160 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.barNav {
+    width: 100%;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background-color: #343434;
+    color:white;
+}
+
+.barNav h1 {
+    margin: 0px;
+    padding-left: 25px;
+}
+
+.calculadora {
+    width: 100%;
+    display: grid;
+    padding-top: 25px;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 250px;
+    justify-content: center;
+    gap: 55px;
+}
+
+.calculadora2 {
+    width: 100%;
+    display: grid;
+    padding-top: 25px;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 250px;
+    justify-content: center;
+    gap: 55px;
+    margin-top: 25px;
+}
+
+.calculadora div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+
+.calculadora div:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.274);
+}
+
+.calculadora div p {
+    margin: 0;
+    padding: 25px;
+    font-size: 20px;
+    
+}
+
+.calculadora div img {
+    width: 150px;
+}
+
+.calculadora2 div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 0.4s;
+}
+
+.calculadora2 div p {
+    margin: 0;
+    padding: 25px;
+    font-size: 20px;
+}
+
+.calculadora2 div:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.274);
+}
+
+.calculadora2 div img {
+    width: 150px;
+}
+
+.Content {
+    display: flex;
+    position: fixed;
+    width: 50%;
+    height: 600px;
+    background-color: white;
+    top: 15%;
+    left: 25%;
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: 0.4s;
+    border-radius: 25px;
+    box-shadow: 0px 0px 5px black;
+    color: rgb(0, 0, 0); font-size: 20px;  
+}
+
+.Content input{
+    width:75px;
+}
+
+.mostrar {
+    visibility: visible;
+    opacity: 1;
+}
+
+.x {
+    width: 50px;
+    padding: 25px;
+}
+
+button {
+    border: none;
+    background: none;
+}
+
+.Content button {
+    top: 0;
+    left: 0;
+    position: absolute;
+    background: none;
+    border: none;
+    width: 50px;
+    height: 50px;
+}
+
+.Content {
+    align-items: center;
+    justify-content: center;
+}
+
+.Content form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.Content form div {
+    margin-bottom: 10px;
+}
+
+.desfocar {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background-image: url(shrek.webp);
+}
+
+.blur {
+    filter: blur(25px);
+}
+

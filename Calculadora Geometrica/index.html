@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora Geometrica</title>
+</head>
+
+<body>
+    <div class="desfocar" id="desfocar">
+        <div class="barNav">
+            <h1>Calculadora Geometrica</h1>
+        </div>
+        <h1 align="center">Qual área você deseja calcular?</h1>
+        <div class="calculadora">
+            <button onclick="mostrarQuad();">
+                <div class="quad">
+                    <p>Quadrado</p>
+                    <img src="quadrado.png" alt="">
+                </div>
+            </button>
+            <button onclick="mostrarTrap();">
+                <div class="trap">
+                    <p>Trapezio</p>
+                    <img src="trapezio.png" alt="">
+                </div>
+            </button>
+            <button onclick="mostrarReta();">
+                <div class="reta">
+                    <p>Retangulo</p>
+                    <img src="contorno-de-forma-retangular.png" alt="">
+                </div>
+            </button>
+            <button onclick="mostrarTria();">
+                <div class="tria">
+                    <p>Triângulo</p>
+                    <img src="variante-de-contorno-triangular.png" alt="">
+                </div>
+            </button>
+        </div>
+        <div class="calculadora2">
+            <button onclick="mostrarPara();">
+                <div class="para">
+                    <p>Paralelogramo</p>
+                    <img src="paralelogramo.png" alt="">
+                </div>
+            </button>
+            <button onclick="mostrarLosa();">
+                <div class="losa">
+                    <p>Losangulo</p>
+                    <img src="diamond.png" alt="">
+                </div>
+            </button>
+            <button onclick="mostrarCirc();">
+                <div class="circ">
+                    <p>Circulo</p>
+                    <img src="dry-clean.png" alt="">
+                </div>
+            </button>
+        </div>
+    </div>
+    <div class="Content" id="quadContent">
+        <button onclick="fecharQuad()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="quadrado.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formQuad">
+            <div>
+                Lado: <input type="text" name="ladoQuad" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcQuad()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <div class="Content" id="trapContent">
+        <button onclick="fecharTrap()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="trapezio.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formTrap">
+            <div>
+                Base Maior: <input type="text" name="baseMaior" value="">
+            </div>
+            <div>
+                Base Menor: <input type="text" name="baseMenor" value="">
+            </div>
+            <div>
+                Altura: <input type="text" name="alturaTrap" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcTrap()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <div class="Content" id="retaContent">
+        <button onclick="fecharReta()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="contorno-de-forma-retangular.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formReta">
+            <div>
+                Base: <input type="text" name="base" value="">
+            </div>
+            <div>
+                Altura: <input type="text" name="altura" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcReta()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <div class="Content" id="triaContent">
+        <button onclick="fecharTria()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="variante-de-contorno-triangular.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formTria">
+            <div>
+                Base: <input type="text" name="base" value="">
+            </div>
+            <div>
+                Altura: <input type="text" name="altura" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcTria()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <div class="Content" id="paraContent">
+        <button onclick="fecharPara()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="paralelogramo.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formPara">
+            <div>
+                Base: <input type="text" name="base" value="">
+            </div>
+            <div>
+                Altura: <input type="text" name="altura" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcPara()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <div class="Content" id="losaContent">
+        <button onclick="fecharLosa()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="diamond.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formLosa">
+            <div>
+                Diagonal Maior: <input type="text" name="maior" value="">
+            </div>
+            <div>
+                Diagonal Menor: <input type="text" name="menor" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcLosa()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <div class="Content" id="circContent">
+        <button onclick="fecharCirc()">
+            <img src="botao-x.png" class="x">
+        </button>
+        <img src="dry-clean.png" alt="" width="250px" style="margin-right:25px ;">
+        <form name="formCirc">
+            <div>
+                Raio: <input type="text" name="raio" value="">
+            </div>
+            <div>
+                <input type="button" onclick="calcCirc()" value="Calcular">
+            </div>
+            <div>
+                Resultado: <input type="text" name="result" value="">
+            </div>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
